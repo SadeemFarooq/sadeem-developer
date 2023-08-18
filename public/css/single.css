@@ -1,0 +1,75 @@
+/* CSS for Single Product Page */
+
+/* Product Section */
+#products {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.product-single {
+  display: flex;
+  align-items: center;
+}
+
+.product-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-content {
+  margin-left: 30px;
+}
+
+.product-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-content h3:last-child {
+  text-decoration: line-through;
+}
+
+.product-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-content a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-content a.btn:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-single {
+    flex-direction: column;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
